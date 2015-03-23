@@ -56,7 +56,11 @@ public class AgeCalculator {
                 }
                 else System.out.println(" you weren't not born yet");
                 
-		/* 
+		
+                    // I did extra credit 1,2 and 3 
+               
+                
+                /* 
 		 EXTRA CREDIT 1: Use an else statement above to output an error message. This
 		 corresponds to the case where the user wasn't born yet.
 		
