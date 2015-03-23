@@ -26,8 +26,10 @@ public class AgeCalculator {
 		//Ask the user for another year.
 		System.out.print("Enter another year: ");
 		int anotherYear = scanner.nextInt();
-
-		//Calculate the user's age in the year retrieved in the previous step.
+                
+                
+                
+               //Calculate the user's age in the year retrieved in the previous step.
 		//First, we need to know how many years to add to the user's current age.
 		//This will be the other year minus the current year.
 		int yearsToAdd = anotherYear - currentYear;
@@ -36,10 +38,26 @@ public class AgeCalculator {
 		int newAge = currentAge + yearsToAdd;
 
 		//Finally, display the user's age in this year, but only if it's valid.
-		if (newAge >= 0)
-			System.out.println("You will be " + newAge + "-years-old in "
+		if (newAge >= 0){
+                    if ( anotherYear > currentYear){
+                        if (newAge == 1)
+                            System.out.println("you will be 1 year old ");
+                        else
+                            System.out.println("You will be " + newAge + "-years-old in "
 				+ anotherYear + ".");
-
+                    } else {
+                        if (newAge == 1)
+                            System.out.println("you were  1 year old ");
+                        else
+                            System.out.println("You were  " + newAge + "-years-old in "
+                                    + anotherYear + ".");
+                    }
+                    
+                    
+                    
+                }
+                else System.out.println(" you weren't not born yet");
+                
 		/* 
 		 EXTRA CREDIT 1: Use an else statement above to output an error message. This
 		 corresponds to the case where the user wasn't born yet.
