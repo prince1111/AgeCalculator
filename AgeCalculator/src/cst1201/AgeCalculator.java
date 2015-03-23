@@ -53,8 +53,6 @@ public class AgeCalculator {
                                     + anotherYear + ".");
                     }
                     
-                    
-                    
                 }
                 else System.out.println(" you weren't not born yet");
                 
